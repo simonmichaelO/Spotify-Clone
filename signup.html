@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+   <!--start head, linking and seo section  -->
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- page title  -->
+      <title>Spotify Login</title>
+      <!-- favicon  -->
+      <link rel="icon" href="https://www.spotify.com/favicon.ico" />
+      <!-- font awesome link  -->
+      <script src="https://kit.fontawesome.com/cb6b0013c3.js" crossorigin="anonymous"></script>
+      <!-- custom css  -->
+      <link rel="stylesheet" href="login&signup.css">
+   </head>
+   <!--end head, linking and seo section  -->
+   <!-- start content and canvas area  -->
+   <body>
+      <!-- start navbar and logo section  -->
+      <div class="logo" href="#">
+         <i class="fa-brands fa-spotify"></i>
+         <span class="brand-name">Spotify</span>
+      </div>
+      <!-- end navbar and logo section  -->
+      <!-- start the whole login or sign up section  -->
+      <section>
+         <div class="container">
+            <div class="form-container">
+               <div class="text-center">
+                  <h1 class="txt">Sign up to start <br>listening</h1>
+               </div>
+               <!-- start form section  -->
+               <form action="login" method="post" class="login">
+                <input type="text" name="username" placeholder="Email Address" required>
+             </form>
+             <div class="paragraph">
+                <a href="#" id="alertButton4">Use phone number instead</a>
+             </div>
+             <div class="login">
+                <button type="submit" class="submit" id="checkmate">Next</button>
+             </div>
+             <!-- end form section  -->
+               <!-- start social media options  -->
+               <div class="social-media-options size">
+                  <button class="socials" id="alertButton1">
+                  <i class="fa-brands fa-google icon"></i>
+                  Continue with Google
+                  </button>  
+                  <button class="socials" id="alertButton2">
+                  <i class="fa-brands fa-facebook icon"></i>
+                  Continue with Facebook
+                  </button> 
+                  <button class="socials" id="alertButton3">
+                  <i class="fa-brands fa-apple icon"></i>
+                  Continue with Apple
+                  </button> 
+               </div>
+               <!-- end social media options  -->
+               <div class="paragraph">
+                <p>Already have an account? <a href="index.html">Log in</a></p>
+             </div>
+            </div>
+         </div>
+      </section>
+      <!-- end the whole login or sign up section  -->
+      <!-- start footer  -->
+      <footer>
+         <p>Copyright &copy; 2024 Spotify clone by <span class="name" id="aboutme">Simon Michael</span></p>
+      </footer>
+      <!-- end footer  -->
+      <!-- start javascript  -->
+      <script>
+         function showAlert() {
+           alert('This feature is unavailable for now');
+         }
+         
+         document.getElementById('alertButton1').addEventListener('click', showAlert);
+         document.getElementById('alertButton2').addEventListener('click', showAlert);
+         document.getElementById('alertButton3').addEventListener('click', showAlert);
+         document.getElementById('alertButton4').addEventListener('click', showAlert);
+         
+         document.getElementById('aboutme').addEventListener('click', function() {
+         alert('This ia an APTECH project, presented by Simon Michael');
+         });
+         document.getElementById('checkmate').addEventListener('click', function() {
+         alert("Sorry, you can't sign up, This is a static website, There no database");
+         });
+      </script>
+   </body>
+   <!-- end content and canvas area  -->

@@ -1,0 +1,170 @@
+/* css for the sign up and login page */
+/* the parent style */
+body {
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(#676767, #151515);
+    height: 150vh;
+    margin: 0;
+}
+section {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 130vh;
+}
+.logo {
+    padding: 30px;
+    background-color: #000000;
+    color: #fff;
+}
+.logo:hover {
+    color: #1ed760;
+}
+.fa-spotify {
+    font-size: 2.5rem;
+}
+.brand-name {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.container {
+    border-radius: 15px;
+    box-shadow: 0 0 10px #1db954;
+}
+.form-container {
+    background-color: #000000;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+}
+.text-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.txt {
+    font-size: 2rem;
+    font-weight: 800;
+}
+.size {
+    margin-top: 50px;
+}
+.social-media-options {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.socials {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: transparent;
+    color: #ffffff;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 53%;
+    border: 1px solid white;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+.socials:hover {
+    border: 2px solid #1db954;
+}
+.socials .icon {
+    margin-right: 20%;
+}
+.fa-facebook {
+    color: #0454ff;
+}
+.fa-google {
+    background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+/* media query for the button */
+@media (max-width: 480px) {
+    .socials {
+        padding: 10px 20px;
+        font-size: 12px;
+   }
+    .socials .icon {
+        margin-right: 5%;
+   }
+}
+@media (max-width: 768px) {
+    .socials {
+        padding: 10px 20px;
+        font-size: 12px;
+   }
+    .socials .icon {
+        margin-right: 5%;
+   }
+}
+input[type="text"], input[type="email"], input[type="password"] {
+    width: 55%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+}
+.login {
+    margin-top: 55px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.submit {
+    display: flex;
+    justify-content: center;
+    width: 55%;
+    padding: 10px;
+    background-color: #1db954;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+.submit:hover {
+    background-color: #1ed760;
+}
+
+.paragraph {
+    display: flex;
+    justify-content: center;
+}
+p {
+    margin-top: 20px;
+}
+a {
+    color: #1db954;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    background-color: #000000;
+    padding: 30px;
+}
+.name {
+    font-size: 1.2rem;
+    background: -webkit-linear-gradient(#e95555, #414dd6);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.name:hover {
+    font-size: 1.6rem;
+    background: -webkit-linear-gradient( #414dd6, #e95555);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
